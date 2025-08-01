@@ -74,7 +74,7 @@ backspace_repeat_rate = 50    # ms
 
 # Car state
 car_x, car_y = WIDTH // 2, HEIGHT - 150
-car_angle = 0  # Start facing right
+car_angle = 0 
 car_speed = 0
 
 # Run-time injected functions
