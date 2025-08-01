@@ -389,6 +389,15 @@ while running:
                     run_code(code)
                     mode = "race"
 
+                elif event.key == pygame.K_RETURN:
+                    line = code_lines[current_line]
+                    new_line = line[cursor_pos:]
+                    code_lines[current_line] = line[:cursor_pos]
+                    code_lines.insert(current_line + 1, new_line)
+                    current_line += 1
+                    cursor_pos = 0
+
+
                 elif event.key == pygame.K_BACKSPACE:
                     if not backspace_pressed:
                         handle_backspace()
