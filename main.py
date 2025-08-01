@@ -30,9 +30,6 @@ mode = "ide"  # 'ide', 'race'
 
 # Original premade code (to revert to)
 original_code_lines = [
-    "# AI Car Controller - No infinite loops needed!",
-    "# This function runs once per frame automatically",
-    "",
     "def control_car():",
     "    front = get_Forwardsensordata()",
     "    left = get_Leftsensordata()",
