@@ -2,6 +2,7 @@ import pygame
 import sys
 import io
 import math
+import time
 
 pygame.init()
 
@@ -312,6 +313,7 @@ def run_code(code):
             "abs": abs,
             "min": min,
             "max": max,
+            "time": time,
         }
         user_code_compiled = compile(code, "<user_code>", "exec")
         user_globals = exec_globals
